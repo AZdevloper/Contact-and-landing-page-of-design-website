@@ -4,3 +4,26 @@
     background-color: #faf2e9;
     font-family: 'Karla', sans-serif;
 }
+
+.Articles {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: silver;
+    display: inline-block;
+    margin: 50px;
+    background-color: white;
+
+}
+
+.Articles > img,h3,p,b{
+    background-color: white;
+}
+
+.Articles > p{
+    color: silver;
+}
+
+b {
+    color: black;
+}
