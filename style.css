@@ -27,3 +27,17 @@
 b {
     color: black;
 }
+
+@media (max-width:767px){
+    .S2{
+        display: flex;
+        flex-direction: column;
+    }
+    .Articles > h3,p,b{
+        font-size:xx-large ;
+    }
+    
+    .Articles > img {
+    }
+
+}
