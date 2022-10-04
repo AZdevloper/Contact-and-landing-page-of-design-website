@@ -168,3 +168,75 @@ ul li a:hover{
         height: 3rem;
     }
 }
+
+
+
+
+.blue{
+    background-color: rgb(0, 0, 110);
+    width: 100px;
+    height: 25px;
+    border-radius: 19px;
+    text-align: center;
+    padding: 6px;
+    margin-top: 20px;
+    margin-left: 9px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.342);
+}
+.txt1{
+    background-color:rgba(245, 222, 179, 0);
+    color: #ffffff;
+    font-size:large;
+    font-weight: bolder;
+    
+}
+.carte1{
+    display: flex;
+    display: block;
+    background-color: rgb(255, 249, 225);
+    width: 250px;
+    height: 100%;
+    margin: 30px;
+    padding: 15px;
+    border:2px solid rgb(168, 168, 168);
+    border-radius: 5px;
+}
+.butt{
+    display:flex;
+    margin: 10px;
+    margin-top: 10px;
+}
+.butt button {
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: rgb(255, 249, 225);
+    color: rgb(0, 0, 0);
+    border:2px solid rgb(168, 168, 168);
+    font-size:large;
+    font-weight:bolder;
+}
+.butt button:active{
+    background-color: rgb(22, 0, 120);
+    box-shadow: 0 5px 0px rgb(0, 0, 0);
+    color: white;
+    border-style: none;
+
+}   
+.li1{
+    margin-top: 30px;
+   
+}
+.li2{
+    padding: 20px;
+    background-color: rgb(255, 249, 225);
+    list-style-type: none;
+}
+.li2:hover{
+    border:5px solid rgb(168, 168, 168);
+}
+.li2 img{
+    background-color: rgb(255, 249, 225);
+    width: 20px;
+    height: 20px;
+}
