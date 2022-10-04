@@ -4,3 +4,56 @@
     background-color: #faf2e9;
     font-family: 'Karla', sans-serif;
 }
+
+
+
+
+
+/* Anas */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    background-color: #faf2e9;
+    font-family: 'Karla', sans-serif;
+}
+
+.Articles {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: silver;
+    display: inline-block;
+    margin: 50px;
+    background-color: white;
+
+}
+
+.Articles > img,h3,p,b{
+    background-color: white;
+}
+
+.Articles > p{
+    color: silver;
+}
+
+b {
+    color: black;
+}
+
+@media (max-width:767px){
+    .S2{
+        display: flex;
+        flex-direction: column;
+    }
+    .Articles > h3,p,b{
+        font-size:xx-large ;
+    }
+    
+    .Articles > img {
+    }
+
+}
+
+
+
+/* Anas */
