@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200;1,300&display=swap');
+
+@keyframes underline{
+    from {text-decoration: underline;}
+}
+
+
 *{
     margin: 0;
     background-color: #faf2e9;
@@ -17,7 +23,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    box-sizing: border-box;
+    align-items: center;
     padding-bottom: 3%;
 }
 
@@ -27,7 +33,7 @@ ul{
     justify-content: space-around;
     box-sizing: border-box;
     list-style-type: none;
-    padding: 3%;
+    padding:3%;
 }
 ul li {
     padding: 0 1%;
@@ -36,6 +42,34 @@ ul li {
 ul li a{
     text-decoration: none;
     color: black;
+    position: relative;
+    transition: transform 300ms;
+}
+
+ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #353333;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+ul li a:hover{
+    color: rgb(232, 198, 147);
+    transform: scale(1.01);
+    animation-delay: 2s;
+    animation-name: underline;
 }
 
 .signUp span{
@@ -81,7 +115,9 @@ ul li a{
 .S1 .contenu div input[type=email]{
     border: 1px solid rgb(225, 215, 215);
     border-radius: 1%;
-    background-color: rgb(250, 252, 254);
+    background-color: rgba(239, 240, 242, 0.87);
+    width: 80%;
+    margin-right: 1%;
     /* width: 100%; */
 }
 
@@ -114,7 +150,7 @@ ul li a{
     }
     .logo{
         width: 7rem;
-        height: 5rem;
+        height: 3rem;
     }
     
 }
