@@ -252,8 +252,8 @@ ul li a:hover {
 .S2 {
     display: grid;
     justify-content: space-around;
-    grid-template-columns: 190px 190px 190px 190px;
-    grid-template-rows: 240px 240px 240px 240px;
+    grid-template-columns: repeat(4,190px);
+    column-gap: 2%;
 }
 .Articles {
     border-style: solid;
