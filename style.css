@@ -77,7 +77,6 @@ ul li a:hover:after {
 
 ul li a:hover {
     color: rgb(232, 198, 147);
-    transform: scale(1.01);
 }
 
 .signUp span {
@@ -91,7 +90,7 @@ ul li a:hover {
     padding: 1%;
     text-align: center;
     text-decoration: none;
-    width: 20vw;
+    width: 30vw;
     height: 5vh;
     box-shadow: 0 2.8px 2.2px rgba(78, 152, 195, 0.338);
     background-color: rgb(53, 53, 213);
@@ -102,6 +101,9 @@ ul li a:hover {
 .button:active {
     background-color: rgb(22, 0, 120);
     box-shadow: 0 5px 0px rgb(0, 0, 0);
+}
+section{
+    padding: 2% 0;
 }
 .S1 .contenu {
     width: 30rem;
@@ -132,7 +134,8 @@ ul li a:hover {
     border-radius: 1%;
     background-color: rgba(255, 255, 255, 0.87);
     width: 50%;
-    height: auto;
+    height: 4.3vh;
+    padding: 0 3%;
 }
 
 .S1 {
@@ -154,6 +157,12 @@ ul li a:hover {
         grid-template-columns: 20% 40% 40%;
         row-gap: 2%;
         padding: 3%;
+    }
+    .button{
+        width: 16vw;
+    }
+    .S1 .contenu div input[type="email"]{
+        width: 40%;
     }
     .img {
         width: 35vw;
@@ -253,8 +262,9 @@ ul li a:hover {
 .S2 {
     display: grid;
     justify-content: space-around;
-    grid-template-columns: 190px 190px 190px 190px;
-    grid-template-rows: 240px 240px 240px 240px;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns:repeat(1,190px);
+    row-gap: 2%;
 }
 .Articles {
     border-style: solid;
@@ -275,6 +285,7 @@ ul li a:hover {
 b {
     color: black;
 }
+
 .noHidden{
   color: #9d9a96;
 }
@@ -315,22 +326,29 @@ footer{
 
 
 
-@media (max-width: 767px) {
+.image {
+    text-align: center;
+}
+
+
+@media (min-width: 767px) {
     .S2 {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(4,220px);
+        grid-template-rows: repeat(1,1fr);
+        column-gap: 2%;
     }
-    .Articles > h3,
+    /* .Articles > h3,
     .Articles > p,
     .Articles > b {
-        font-size: xx-large;
-    }
+        font-size: large;
+    } */
     .Articles > h3 {
-        color: red;
         font-style: italic;
     }
     .image {
-        text-align: center;
+        text-align: left;
     }
     .Articles {
         margin: 20px;
