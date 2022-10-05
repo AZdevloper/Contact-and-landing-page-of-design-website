@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200;1,300&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200;1,300&display=swap");
+* {
     margin: 0;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 0.95rem;
     font-weight: bold;
 }
 
 body {
     background-color: #faf2e9;
-    padding:0 5%
+    padding: 0 5%;
 }
-.blue{
+.blue {
     background-color: rgb(0, 0, 110);
     width: 100px;
     height: 100%;
     border-radius: 19px;
     text-align: center;
 }
-.txt1{
-    background-color:rgba(245, 222, 179, 0);
+.txt1 {
+    background-color: rgba(245, 222, 179, 0);
     color: #ffffff;
-    font-size:large;
+    font-size: large;
     font-weight: bold;
 }
-nav{
+nav {
     display: block;
     align-items: center;
     text-align: center;
 }
 
-.signUp{
+.signUp {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -37,20 +37,20 @@ nav{
     padding-bottom: 3%;
 }
 
-ul{
+ul {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-around;
     box-sizing: border-box;
     font-weight: bold;
     list-style-type: none;
-    padding:3%;
+    padding: 3%;
 }
 ul li {
     padding: 0 1%;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: black;
     position: relative;
@@ -58,34 +58,33 @@ ul li a{
 }
 
 ul li a:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: 
-  #353333;
+    background-color: #353333;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
+}
+
 ul li a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
-ul li a:hover{
+ul li a:hover {
     color: rgb(232, 198, 147);
     transform: scale(1.01);
 }
 
-.signUp span{
+.signUp span {
     color: rgb(171, 166, 166);
 }
 
-.button{
+.button {
     border: none;
     border-radius: 0.2rem;
     color: white;
@@ -97,38 +96,41 @@ ul li a:hover{
     box-shadow: 0 2.8px 2.2px rgba(78, 152, 195, 0.338);
     background-color: rgb(53, 53, 213);
 }
-.button:hover{
-    background-color:  rgba(82, 82, 234, 0.594);
+.button:hover {
+    background-color: rgba(82, 82, 234, 0.594);
 }
-.button:active{
+.button:active {
     background-color: rgb(22, 0, 120);
     box-shadow: 0 5px 0px rgb(0, 0, 0);
+}
+section{
+    padding: 2% 0;
 }
 .S1 .contenu {
     width: 30rem;
 }
 
-.S1 .contenu h1{
+.S1 .contenu h1 {
     color: #2c507f;
     font-weight: bolder;
     text-align: center;
 }
 
-.S1 .contenu p{
-    color:rgb(171, 166, 166);
+.S1 .contenu p {
+    color: rgb(171, 166, 166);
     text-align: center;
 }
 
-.S1 .contenu div{
+.S1 .contenu div {
     margin: 2%;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
 }
 
-.S1 .contenu div input[type=email]{
+.S1 .contenu div input[type="email"] {
     border: 1px solid rgb(225, 215, 215);
     border-radius: 1%;
     background-color: rgba(255, 255, 255, 0.87);
@@ -136,7 +138,7 @@ ul li a:hover{
     height: auto;
 }
 
-.S1{
+.S1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,118 +146,24 @@ ul li a:hover{
     justify-content: space-evenly;
 }
 
-.img{
+.img {
     width: 80%;
     height: 80%;
 }
 
-@media only screen and (min-width:900px){
-    nav{
-         display: grid;
-         grid-template-columns: 20% 40% 40%;
-         row-gap: 2%;
-         padding: 3%;
+@media only screen and (min-width: 900px) {
+    nav {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        row-gap: 2%;
+        padding: 3%;
     }
-    .img{
-        width:35vw;
+    .img {
+        width: 35vw;
         height: 50vh;
     }
-    .logo{
+    .logo {
         width: 6rem;
         height: 2rem;
     }
 }
-
-
-
-
-.blue{
-    background-color: #13366D;
-    width: 100px;
-    height: 25px;
-    border-radius: 19px;
-    text-align: center;
-    padding: 6px;
-    margin-top: 20px;
-    margin-left: 9px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.342);
-}
-.txt1{
-    background-color:rgba(245, 222, 179, 0);
-    color: #ffffff;
-    font-size:large;
-    font-weight: bolder;
-    
-}
-.carte1{
-    display: flex;
-    display: block;
-    background-color:  #FFF3D9;
-    width: 250px;
-    height: 100%;
-    margin: 30px;
-    padding: 15px;
-    border:2px solid rgb(168, 168, 168);
-    border-radius: 5px;
-}
-.butt{
-    display:flex;
-    margin: 10px;
-    margin-top: 10px;
-}
-.butt button {
-    width: 250px;
-    height: 40px;
-    border-radius: 3px;
-    background-color:  #FFF3D9;
-    color: rgb(0, 0, 0);
-    border:2px solid rgb(168, 168, 168);
-    font-size:large;
-    font-weight:bolder;
-}
-.butt button:active{
-    background-color: rgb(22, 0, 120);
-    box-shadow: 0 5px 0px rgb(0, 0, 0);
-    color: white;
-    border-style: none;
-
-}   
-.li1{
-    margin-top: 30px;
-   
-}
-.li2{
-    padding: 20px;
-    background-color: #FFF3D9;
-    list-style-type: none;
-}
-.li2:hover{
-    font-weight: bold;
-    font-size: large;
-}
-.li2 img{
-    background-color: #FFF3D9;
-    width: 20px;
-    height: 20px;
-}
-
-.price p{
-    font-weight: bold;
-    margin-left: 18px;
-    font-size:30px;
-}
-.price span{
-    color: gray;
-}
-
-
-
-
-.S3{
-    display: flex;
-    justify-content: center;
-}
-.p2{
-    margin-bottom: 162px;
-}
-
