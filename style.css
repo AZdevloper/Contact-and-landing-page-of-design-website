@@ -2,24 +2,28 @@
 *{
     margin: 0;
     font-family: 'Karla', sans-serif;
+    
 }
 
 body {
     background-color: #faf2e9;
 }
 
+.S2{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 190px 190px 190px 190px;
+    grid-template-rows: 240px 240px 240px 240px;
+}
 .Articles {
     border-style: solid;
     border-width: thin;
     border-radius: 5px;
     border-color: silver;
-    display: inline-block;
-    margin: 50px;
     background-color: white;
-
 }
 
-.Articles {
+.Articles{
     background-color: white;
 }
 
@@ -39,7 +43,14 @@ b {
     .Articles > h3, .Articles > p, .Articles > b{
         font-size:xx-large ;
     }
-    .Articles > img {
+    .Articles > h3 {
+        color: red;
+        font-style: italic;
     }
-
+    .image{
+        text-align: center;
+    }
+    .Articles{
+        margin: 20px;
+    }
 }
