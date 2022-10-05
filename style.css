@@ -13,6 +13,9 @@
     font-weight: bold;
     overflow: hidden;
 }
+body{
+    padding:5%
+}
 nav{
     display: block;
     align-items: center;
@@ -69,8 +72,6 @@ ul li a:hover:after {
 ul li a:hover{
     color: rgb(232, 198, 147);
     transform: scale(1.01);
-    animation-delay: 2s;
-    animation-name: underline;
 }
 
 .signUp span{
@@ -84,13 +85,13 @@ ul li a:hover{
     padding: 1%;
     text-align: center;
     text-decoration: none;
-    width: 50%;
+    width: 20vw;
+    height: 5vh;
     box-shadow: 0 2.8px 2.2px rgba(78, 152, 195, 0.338);
-    background-color: rgb(76, 76, 219);
+    background-color: rgb(53, 53, 213);
 }
 .S1 .contenu {
     width: 30rem;
-    /* height: 16rem; */
 }
 
 .S1 .contenu h1{
@@ -116,10 +117,9 @@ ul li a:hover{
 .S1 .contenu div input[type=email]{
     border: 1px solid rgb(225, 215, 215);
     border-radius: 1%;
-    background-color: rgba(239, 240, 242, 0.87);
-    width: 80%;
-    margin-right: 1%;
-    /* width: 100%; */
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 50%;
+    height: auto;
 }
 
 .S1{
@@ -142,12 +142,9 @@ ul li a:hover{
          row-gap: 2%;
          padding: 3%;
     }
-    *{
-        font-size: 1rem;
-    }
     .img{
-        width:40vw;
-        height: 46vh;
+        width:35vw;
+        height: 50vh;
     }
     .logo{
         width: 6rem;
