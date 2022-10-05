@@ -1,42 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200;1,300&display=swap');
-
-@keyframes underline{
-    from {text-decoration: underline;}
-}
-
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200;1,300&display=swap");
+* {
     margin: 0;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
 }
 
 body {
     background-color: #faf2e9;
+    padding: 0 5%;
 }
-.blue{
+.blue {
     background-color: rgb(0, 0, 110);
     width: 100px;
     height: 100%;
     border-radius: 19px;
     text-align: center;
 }
-.txt1{
-    background-color:rgba(245, 222, 179, 0);
+.txt1 {
+    background-color: rgba(245, 222, 179, 0);
     color: #ffffff;
-    font-size:large;
+    font-size: large;
     font-weight: bold;
-=======
-    font-size: 0.95rem;
-    font-weight: bold;
-    overflow: hidden;
 }
-nav{
+nav {
     display: block;
     align-items: center;
     text-align: center;
 }
 
-.signUp{
+.signUp {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -44,20 +37,20 @@ nav{
     padding-bottom: 3%;
 }
 
-ul{
+ul {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-around;
     box-sizing: border-box;
     font-weight: bold;
     list-style-type: none;
-    padding:3%;
+    padding: 3%;
 }
 ul li {
     padding: 0 1%;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: black;
     position: relative;
@@ -65,81 +58,87 @@ ul li a{
 }
 
 ul li a:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: 
-  #353333;
+    background-color: #353333;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
+}
+
 ul li a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
-
-ul li a:hover{
-    color: rgb(232, 198, 147);
-    transform: scale(1.01);
-    animation-delay: 2s;
-    animation-name: underline;
 }
 
-.signUp span{
+ul li a:hover {
+    color: rgb(232, 198, 147);
+}
+
+.signUp span {
     color: rgb(171, 166, 166);
 }
 
-.button{
+.button {
     border: none;
     border-radius: 0.2rem;
     color: white;
     padding: 1%;
     text-align: center;
     text-decoration: none;
-    width: 50%;
+    width: 30vw;
+    height: 5vh;
     box-shadow: 0 2.8px 2.2px rgba(78, 152, 195, 0.338);
-    background-color: rgb(76, 76, 219);
+    background-color: rgb(53, 53, 213);
+}
+.button:hover {
+    background-color: rgba(82, 82, 234, 0.594);
+}
+.button:active {
+    background-color: rgb(22, 0, 120);
+    box-shadow: 0 5px 0px rgb(0, 0, 0);
+}
+section{
+    padding: 2% 0;
 }
 .S1 .contenu {
     width: 30rem;
-    /* height: 16rem; */
 }
 
-.S1 .contenu h1{
+.S1 .contenu h1 {
     color: #2c507f;
     font-weight: bolder;
     text-align: center;
 }
 
-.S1 .contenu p{
-    color:rgb(171, 166, 166);
+.S1 .contenu p {
+    color: rgb(171, 166, 166);
     text-align: center;
 }
 
-.S1 .contenu div{
+.S1 .contenu div {
     margin: 2%;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
 }
 
-.S1 .contenu div input[type=email]{
+.S1 .contenu div input[type="email"] {
     border: 1px solid rgb(225, 215, 215);
     border-radius: 1%;
-    background-color: rgba(239, 240, 242, 0.87);
-    width: 80%;
-    margin-right: 1%;
-    /* width: 100%; */
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 50%;
+    height: 4.3vh;
+    padding: 0 3%;
 }
 
-.S1{
+.S1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -147,36 +146,36 @@ ul li a:hover{
     justify-content: space-evenly;
 }
 
-.img{
+.img {
     width: 80%;
     height: 80%;
 }
 
-@media only screen and (min-width:900px){
-    nav{
-         display: grid;
-         grid-template-columns: 20% 40% 40%;
-         row-gap: 2%;
-         padding: 3%;
+@media only screen and (min-width: 900px) {
+    nav {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        row-gap: 2%;
+        padding: 3%;
     }
-    *{
-        font-size: 1rem;
+    .button{
+        width: 16vw;
     }
-    .img{
-        width:40vw;
-        height: 46vh;
+    .S1 .contenu div input[type="email"]{
+        width: 40%;
     }
-    .logo{
+    .img {
+        width: 35vw;
+        height: 50vh;
+    }
+    .logo {
         width: 6rem;
         height: 2rem;
     }
 }
 
-
-
-
-.blue{
-    background-color: #13366D;
+.blue {
+    background-color: #13366d;
     width: 100px;
     height: 25px;
     border-radius: 19px;
@@ -186,26 +185,25 @@ ul li a:hover{
     margin-left: 9px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.342);
 }
-.txt1{
-    background-color:rgba(245, 222, 179, 0);
+.txt1 {
+    background-color: rgba(245, 222, 179, 0);
     color: #ffffff;
-    font-size:large;
+    font-size: large;
     font-weight: bolder;
-    
 }
-.carte1{
+.carte1 {
     display: flex;
     display: block;
-    background-color:  #FFF3D9;
+    background-color: #fff3d9;
     width: 250px;
     height: 100%;
     margin: 30px;
     padding: 15px;
-    border:2px solid rgb(168, 168, 168);
+    border: 2px solid rgb(168, 168, 168);
     border-radius: 5px;
 }
-.butt{
-    display:flex;
+.butt {
+    display: flex;
     margin: 10px;
     margin-top: 10px;
 }
@@ -213,58 +211,160 @@ ul li a:hover{
     width: 250px;
     height: 40px;
     border-radius: 3px;
-    background-color:  #FFF3D9;
+    background-color: #fff3d9;
     color: rgb(0, 0, 0);
-    border:2px solid rgb(168, 168, 168);
-    font-size:large;
-    font-weight:bolder;
+    border: 2px solid rgb(168, 168, 168);
+    font-size: large;
+    font-weight: bolder;
 }
-.butt button:active{
+.butt button:active {
     background-color: rgb(22, 0, 120);
     box-shadow: 0 5px 0px rgb(0, 0, 0);
     color: white;
     border-style: none;
-
-}   
-.li1{
-    margin-top: 30px;
-   
 }
+.li1 {
+    margin-top: 30px;
+}
+
 .li2{
     padding: 10px;
     background-color: #FFF3D9;
+=======
+.li2 {
+    padding: 20px;
+    background-color: #fff3d9;
+
     list-style-type: none;
 }
-.li2:hover{
+.li2:hover {
     font-weight: bold;
     font-size: large;
    
 }
-.li2 img{
-    background-color: #FFF3D9;
+.li2 img {
+    background-color: #fff3d9;
     width: 20px;
     height: 20px;
 }
 
-.price p{
+.price p {
     font-weight: bold;
     margin-left: 18px;
-    font-size:30px;
+    font-size: 30px;
 }
-.price span{
+.price span {
     color: gray;
 }
 
-
-
-
-.S3{
+.S3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .p2{
     margin-bottom: 105px;
 }
 
 
+=======
+.p2 {
+    margin-bottom: 162px;
+}
+
+.S2 {
+    display: grid;
+    justify-content: space-around;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns:repeat(1,190px);
+    row-gap: 2%;
+}
+.Articles {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: silver;
+    background-color: white;
+}
+
+.Articles {
+    background-color: white;
+}
+
+.Articles > p {
+    color: silver;
+}
+
+b {
+    color: black;
+}
+
+.noHidden{
+  color: #9d9a96;
+}
+.transpar{
+    font-size: 33px;
+    color: #485e81;
+}
+/*card ads*/
+.cardAds{
+    display: flex;
+    display: block;
+    width: 250px;
+    height: 100%;
+    margin: 30px;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+}
+div.cardAds >img{
+    width: 95%;
+    height: 95%;
+    margin: 12px 0px 12px 0px;
+
+}
+div.cardAds > p{
+    color: #c5cbd5;
+
+}
+
+/*footer*/
+footer{
+    color: #2c507f;
+}
+.icon-heart{
+    color: red;
+}
+
+
+
+.image {
+    text-align: center;
+}
+
+
+@media (min-width: 767px) {
+    .S2 {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(4,220px);
+        grid-template-rows: repeat(1,1fr);
+        column-gap: 2%;
+    }
+    /* .Articles > h3,
+    .Articles > p,
+    .Articles > b {
+        font-size: large;
+    } */
+    .Articles > h3 {
+        font-style: italic;
+    }
+    .image {
+        text-align: left;
+    }
+    .Articles {
+        margin: 20px;
+    }
+}
