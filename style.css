@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200;1,300&display=swap');
-
-@keyframes underline{
-    from {text-decoration: underline;}
-}
-
-
 *{
     margin: 0;
     font-family: 'Karla', sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
 }
 
 body {
     background-color: #faf2e9;
+    padding:0 5%
 }
 .blue{
     background-color: rgb(0, 0, 110);
@@ -25,10 +22,6 @@ body {
     color: #ffffff;
     font-size:large;
     font-weight: bold;
-=======
-    font-size: 0.95rem;
-    font-weight: bold;
-    overflow: hidden;
 }
 nav{
     display: block;
@@ -86,8 +79,6 @@ ul li a:hover:after {
 ul li a:hover{
     color: rgb(232, 198, 147);
     transform: scale(1.01);
-    animation-delay: 2s;
-    animation-name: underline;
 }
 
 .signUp span{
@@ -101,13 +92,20 @@ ul li a:hover{
     padding: 1%;
     text-align: center;
     text-decoration: none;
-    width: 50%;
+    width: 20vw;
+    height: 5vh;
     box-shadow: 0 2.8px 2.2px rgba(78, 152, 195, 0.338);
-    background-color: rgb(76, 76, 219);
+    background-color: rgb(53, 53, 213);
+}
+.button:hover{
+    background-color:  rgba(82, 82, 234, 0.594);
+}
+.button:active{
+    background-color: rgb(22, 0, 120);
+    box-shadow: 0 5px 0px rgb(0, 0, 0);
 }
 .S1 .contenu {
     width: 30rem;
-    /* height: 16rem; */
 }
 
 .S1 .contenu h1{
@@ -133,10 +131,9 @@ ul li a:hover{
 .S1 .contenu div input[type=email]{
     border: 1px solid rgb(225, 215, 215);
     border-radius: 1%;
-    background-color: rgba(239, 240, 242, 0.87);
-    width: 80%;
-    margin-right: 1%;
-    /* width: 100%; */
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 50%;
+    height: auto;
 }
 
 .S1{
@@ -159,12 +156,9 @@ ul li a:hover{
          row-gap: 2%;
          padding: 3%;
     }
-    *{
-        font-size: 1rem;
-    }
     .img{
-        width:40vw;
-        height: 46vh;
+        width:35vw;
+        height: 50vh;
     }
     .logo{
         width: 6rem;
@@ -176,7 +170,7 @@ ul li a:hover{
 
 
 .blue{
-    background-color: rgb(0, 0, 110);
+    background-color: #13366D;
     width: 100px;
     height: 25px;
     border-radius: 19px;
@@ -196,7 +190,7 @@ ul li a:hover{
 .carte1{
     display: flex;
     display: block;
-    background-color: rgb(255, 249, 225);
+    background-color:  #FFF3D9;
     width: 250px;
     height: 100%;
     margin: 30px;
@@ -213,7 +207,7 @@ ul li a:hover{
     width: 250px;
     height: 40px;
     border-radius: 3px;
-    background-color: rgb(255, 249, 225);
+    background-color:  #FFF3D9;
     color: rgb(0, 0, 0);
     border:2px solid rgb(168, 168, 168);
     font-size:large;
@@ -232,14 +226,37 @@ ul li a:hover{
 }
 .li2{
     padding: 20px;
-    background-color: rgb(255, 249, 225);
+    background-color: #FFF3D9;
     list-style-type: none;
 }
 .li2:hover{
-    border:5px solid rgb(168, 168, 168);
+    font-weight: bold;
+    font-size: large;
 }
 .li2 img{
-    background-color: rgb(255, 249, 225);
+    background-color: #FFF3D9;
     width: 20px;
     height: 20px;
 }
+
+.price p{
+    font-weight: bold;
+    margin-left: 18px;
+    font-size:30px;
+}
+.price span{
+    color: gray;
+}
+
+
+
+
+.S3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.p2{
+    margin-bottom: 162px;
+}
+
