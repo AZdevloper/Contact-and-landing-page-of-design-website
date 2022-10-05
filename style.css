@@ -236,10 +236,17 @@ ul li a:hover{
     list-style-type: none;
 }
 .li2:hover{
-    border:5px solid rgb(168, 168, 168);
+    font-weight: bold;
+    font-size: larger;
 }
 .li2 img{
     background-color: rgb(255, 249, 225);
     width: 20px;
     height: 20px;
 }
+
+.S3{
+    display: flex;
+    justify-content: center;
+}
+
