@@ -275,6 +275,45 @@ ul li a:hover {
 b {
     color: black;
 }
+.noHidden{
+  color: #9d9a96;
+}
+.transpar{
+    font-size: 33px;
+    color: #485e81;
+}
+/*card ads*/
+.cardAds{
+    display: flex;
+    display: block;
+    width: 250px;
+    height: 100%;
+    margin: 30px;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+}
+div.cardAds >img{
+    width: 95%;
+    height: 95%;
+    margin: 12px 0px 12px 0px;
+
+}
+div.cardAds > p{
+    color: #c5cbd5;
+
+}
+
+/*footer*/
+footer{
+    color: #2c507f;
+}
+.icon-heart{
+    color: red;
+}
+
+
 
 @media (max-width: 767px) {
     .S2 {
@@ -296,11 +335,4 @@ b {
     .Articles {
         margin: 20px;
     }
-}
-/*footer*/
-footer{
-    color: #2c507f;
-}
-.icon-heart{
-    color: red;
 }
