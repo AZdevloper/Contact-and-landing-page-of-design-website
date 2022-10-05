@@ -254,6 +254,7 @@ ul li a:hover{
 .S3{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .p2{
     margin-bottom: 162px;
