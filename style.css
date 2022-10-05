@@ -290,14 +290,7 @@ b {
         grid-template-rows: repeat(1,1fr);
         column-gap: 2%;
     }
-    /* .Articles > h3,
-    .Articles > p,
-    .Articles > b {
-        font-size: large;
-    } */
-    .Articles > h3 {
-        font-style: italic;
-    }
+
     .image {
         text-align: left;
     }
