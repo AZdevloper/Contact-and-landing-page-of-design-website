@@ -231,13 +231,14 @@ ul li a:hover{
    
 }
 .li2{
-    padding: 20px;
+    padding: 10px;
     background-color: #FFF3D9;
     list-style-type: none;
 }
 .li2:hover{
     font-weight: bold;
     font-size: large;
+   
 }
 .li2 img{
     background-color: #FFF3D9;
@@ -263,6 +264,7 @@ ul li a:hover{
     flex-wrap: wrap;
 }
 .p2{
-    margin-bottom: 162px;
+    margin-bottom: 105px;
 }
+
 
