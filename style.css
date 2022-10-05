@@ -49,6 +49,7 @@ ul{
     flex-direction: row; 
     justify-content: space-around;
     box-sizing: border-box;
+    font-weight: bold;
     list-style-type: none;
     padding:3%;
 }
@@ -110,8 +111,8 @@ ul li a:hover{
 }
 
 .S1 .contenu h1{
-    color: #313e4f;
-    font-weight: bold;
+    color: #2c507f;
+    font-weight: bolder;
     text-align: center;
 }
 
@@ -163,11 +164,11 @@ ul li a:hover{
     }
     .img{
         width:40vw;
-        height: 40vh;
+        height: 46vh;
     }
     .logo{
-        width: 7rem;
-        height: 3rem;
+        width: 6rem;
+        height: 2rem;
     }
 }
 
