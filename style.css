@@ -226,14 +226,21 @@ section{
 .li1 {
     margin-top: 30px;
 }
+
+.li2{
+    padding: 10px;
+    background-color: #FFF3D9;
+=======
 .li2 {
     padding: 20px;
     background-color: #fff3d9;
+
     list-style-type: none;
 }
 .li2:hover {
     font-weight: bold;
     font-size: large;
+   
 }
 .li2 img {
     background-color: #fff3d9;
@@ -255,6 +262,13 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.p2{
+    margin-bottom: 105px;
+}
+
+
+=======
 .p2 {
     margin-bottom: 162px;
 }
