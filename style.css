@@ -204,7 +204,7 @@ section{
     width: 250px;
     height: 100%;
     margin: 30px;
-    padding: 10px;
+    padding: 2px;
     border: 2px solid rgb(168, 168, 168);
     border-radius: 5px;
 }
@@ -240,6 +240,7 @@ section{
 .li2:hover {
     font-weight: bold;
     font-size: large;
+    padding: 10px;
 }
 .li2 img {
     background-color: #fff3d9;
@@ -294,15 +295,55 @@ b {
 .image {
     text-align: center;
 }
+.noHidden{
+    color: #9d9a96;
+  }
+  .transpar{
+      font-size: 33px;
+      color: #485e81;
+  }
+/*card ads*/
+.cardAds{
+    display: flex;
+    display: block;
+    width: 250px;
+    height: 100%;
+    margin: 30px;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+}
+div.cardAds >img{
+    width: 95%;
+    height: 95%;
+    margin: 12px 0px 12px 0px;
+
+}
+div.cardAds > p{
+    color: #c5cbd5;
+
+}
+/*footer*/
+footer{
+    color: #2c507f;
+}
+.icon-heart{
+    color: red;
+}
+
+
+
+.image {
+    text-align: center;
+}
 
 @media (min-width: 767px) {
     .S2 {
-        display: grid;
-        justify-content: space-around;
-        grid-template-columns: repeat(4,220px);
-        grid-template-rows: repeat(1,1fr);
-        column-gap: 2%;
         padding: 0 5%;
+        display: flex;
+
+
     }
 
     .image {
