@@ -243,6 +243,7 @@ input[type="email"],input[type="password"] {
     margin-bottom: 116px;
 }
 
+/* section2 */
 .S2 {
     display: grid;
     justify-content: space-around;
