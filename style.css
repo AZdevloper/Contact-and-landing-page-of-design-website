@@ -88,16 +88,17 @@ ul li a:hover {
 .button {
     border: none;
     border-radius: 0.2rem;
-    color: white;
     padding: 1%;
     text-align: center;
-    text-decoration: none;
     width: 30vw;
     height: 5vh;
     box-shadow: 0 2.8px 2.2px rgba(78, 152, 195, 0.338);
     background-color: rgb(53, 53, 213);
 }
-
+.button a{
+    color: white;
+    text-decoration: none;
+}
 .button:hover {
     background-color: rgba(82, 82, 234, 0.594);
 }
@@ -135,7 +136,7 @@ section{
     box-sizing: border-box;
 }
 
-.S1 .contenu div input[type="email"] {
+input[type="email"],input[type="password"] {
     border: 1px solid rgb(225, 215, 215);
     border-radius: 1%;
     background-color: rgba(255, 255, 255, 0.87);
@@ -155,29 +156,6 @@ section{
 .img {
     width: 80%;
     height: 80%;
-}
-
-@media only screen and (min-width: 900px) {
-    nav {
-        display: grid;
-        grid-template-columns: 20% 40% 40%;
-        row-gap: 2%;
-        padding: 3%;
-    }
-    .button{
-        width: 16vw;
-    }
-    .S1 .contenu div input[type="email"]{
-        width: 40%;
-    }
-    .img {
-        width: 35vw;
-        height: 50vh;
-    }
-    .logo {
-        width: 6rem;
-        height: 2rem;
-    }
 }
 
 .blue {
@@ -222,6 +200,10 @@ section{
     border: 2px solid rgb(168, 168, 168);
     font-size: large;
     font-weight: bolder;
+}
+.butt button a{
+    color: white;
+    text-decoration: none;
 }
 .butt button:active {
     background-color: rgb(22, 0, 120);
@@ -339,11 +321,118 @@ footer{
     text-align: center;
 }
 
+
+/* partie sign in */
+
+form{
+    box-sizing: border-box;
+    /* margin-top:25%;
+    margin-left: 2%;
+    width: 100%;
+    height: 50%; */
+    margin:10% 10%;
+    border-style: solid;
+    border-width: 1%;
+    border-radius: 2%;
+    border-color: #9d9a96;
+    box-shadow: 0 2.8px 2.2px rgba(6, 28, 41, 0.338);
+    background-color: #fff3d9;
+    padding: 5%;
+}
+
+form a{
+    text-decoration: none;
+    font-size: large;
+}
+
+label{
+    display:block;
+    font-size: large;
+}
+
+form .check label{
+    display: inline-block;
+}
+
+form input[type="email"], form input[type="password"] {
+    width: 90%;
+    margin: 2% 0;
+}
+
+form input[type="checkbox"]{
+    margin: 2% 0;
+}
+form .button{
+    width: 90%;
+    margin: 2.5%;
+}
+
+form h1{
+    font-size: xx-large;
+    font-weight:700 ;
+}
+
+form p{
+    padding:2% 0;
+    font-size: large;
+}
+
+form .withOther,.icons{
+    text-align: center;
+}
+
+.icon{
+    width: 10%;
+    height: 10%;
+}
+
+
+@media only screen and (min-width: 900px) {
+    nav {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        row-gap: 2%;
+        padding: 3%;
+    }
+    .button{
+        width: 16vw;
+    }
+    .S1 .contenu div input[type="email"]{
+        width: 40%;
+    }
+    .img {
+        width: 35vw;
+        height: 50vh;
+    }
+    .logo {
+        width: 6rem;
+        height: 2rem;
+    }
+    
+    /* form{
+        width: 50%;
+        margin-left: 25%;
+        height: 70%;
+        margin-top: 12%;
+      }
+    form h1{
+        font-size: x-large;
+      }
+      form{
+        font-size: large;
+      }
+      form p,form a, form label{
+        font-size: large;
+      }
+      form input[type="email"], form input[type="password"]{
+       height: 6vh;
+    } */
+}
+
 @media (min-width: 767px) {
     .S2 {
         padding: 0 5%;
         display: flex;
-
     }
 
     .image {
@@ -352,13 +441,63 @@ footer{
     .Articles {
         margin: 20px;
     }
+
+    form .button{
+        height: auto;
+    }
+
+    form{
+        margin:10% 30%;
+    }
+    /* form h1{
+        font-size: x-large;
+      }
+      form{
+        font-size: large;
+      }
+      form p,form a, form label{
+        font-size: large;
+      }
+      form input[type="email"], form input[type="password"]{
+       height: 6vh;
+    }
+    form{
+        width: 80%;
+        margin-left: 10%;
+        height: 70%;
+        margin-top: 12%;
+    }
 }
 
-/* partie sign in */
-
-form{
-    display:table-cell;/* shrinks to fit content */
-    margin:auto;
-    border: 1% solid gray;
-    box-shadow: 0 2.8px 2.2px rgba(6, 28, 41, 0.338);
+@media only screen and (min-width:550px){
+    form h1{
+        font-size: 4.5vw;
+      }
+      form{
+        font-size: 2vw;
+      }
+      form p,form a, form label{
+        font-size: 2vw;
+      }
+      form input[type="email"], form input[type="password"]{
+       height: 6vh;
+    }
+    form{
+        margin-top: 6%;
+    }
+    form{
+        width: 80%;
+        margin-left: 10%;
+        height: 70%;
+        margin-top: 12%;
+      } */
 }
+
+/* @media only screen and (min-width:1000){
+    form{
+        width: 50%;
+        margin-left: 25%;
+        height: 70%;
+        margin-top: 12%;
+    }
+} */
