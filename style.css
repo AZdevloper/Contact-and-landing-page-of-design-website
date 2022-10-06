@@ -196,7 +196,6 @@ input[type="email"],input[type="password"] {
     height: 40px;
     border-radius: 3px;
     background-color: #fff3d9;
-    color: rgb(0, 0, 0);
     border: 2px solid rgb(168, 168, 168);
     font-size: large;
     font-weight: bolder;
@@ -204,9 +203,10 @@ input[type="email"],input[type="password"] {
 .butt button:active {
     background-color: rgb(22, 0, 120);
     box-shadow: 0 5px 0px rgb(0, 0, 0);
-    color: white;
+
     border-style: none;
 }
+
 .li1 {
     margin-top: 30px;
 }
@@ -353,19 +353,25 @@ form .check label{
 form input[type="email"], form input[type="password"] {
     width: 90%;
     margin: 2% 0;
+    height: 6vh;
 }
 
 form input[type="checkbox"]{
     margin: 2% 0;
+
 }
 form .button{
     width: 90%;
     margin: 2.5%;
 }
+form .button a{
+    color: white;
+}
 
 form h1{
     font-size: xx-large;
     font-weight:700 ;
+    text-align: center;
 }
 
 form p{
@@ -380,6 +386,7 @@ form .withOther,.icons{
 .icon{
     width: 10%;
     height: 10%;
+    padding: 0 1%;
 }
 
 
@@ -438,12 +445,15 @@ form .withOther,.icons{
         margin: 20px;
     }
 
-    form .button{
-        height: auto;
-    }
+    /* form .button{
+        h
+    } */
 
     form{
         margin:10% 30%;
+    }
+    form .button a{
+        color: white;
     }
     /* form h1{
         font-size: x-large;
