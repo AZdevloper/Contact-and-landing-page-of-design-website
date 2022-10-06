@@ -353,3 +353,12 @@ footer{
         margin: 20px;
     }
 }
+
+/* partie sign in */
+
+form{
+    display:table-cell;/* shrinks to fit content */
+    margin:auto;
+    border: 1% solid gray;
+    box-shadow: 0 2.8px 2.2px rgba(6, 28, 41, 0.338);
+}
