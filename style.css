@@ -204,7 +204,7 @@ section{
     width: 250px;
     height: 100%;
     margin: 30px;
-    padding: 15px;
+    padding: 10px;
     border: 2px solid rgb(168, 168, 168);
     border-radius: 5px;
 }
@@ -233,7 +233,7 @@ section{
     margin-top: 30px;
 }
 .li2 {
-    padding: 20px;
+    padding: 12px;
     background-color: #fff3d9;
     list-style-type: none;
 }
@@ -262,7 +262,7 @@ section{
     flex-wrap: wrap;
 }
 .p2 {
-    margin-bottom: 162px;
+    margin-bottom: 116px;
 }
 
 .S2 {
@@ -339,20 +339,12 @@ footer{
 
 @media (min-width: 767px) {
     .S2 {
-        display: grid;
-        justify-content: space-around;
-        grid-template-columns: repeat(4,220px);
-        grid-template-rows: repeat(1,1fr);
-        column-gap: 2%;
+        padding: 0 5%;
+        display: flex;
+
+
     }
-    /* .Articles > h3,
-    .Articles > p,
-    .Articles > b {
-        font-size: large;
-    } */
-    .Articles > h3 {
-        font-style: italic;
-    }
+
     .image {
         text-align: left;
     }
