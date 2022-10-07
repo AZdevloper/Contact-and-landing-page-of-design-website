@@ -84,8 +84,9 @@ ul li a:hover {
     color: rgb(232, 198, 147);
 }
 
-.signUp span {
+.signUp a {
     color: rgb(171, 166, 166);
+    text-decoration:none ;
 }
 
 .button {
@@ -370,6 +371,7 @@ form .button{
 }
 form .button a{
     color: white;
+    width: 100%;
 }
 
 form h1{
